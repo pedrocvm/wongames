@@ -13,6 +13,11 @@ const Home: React.FC = () => {
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
           rel="stylesheet"
         />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+          rel="stylesheet"
+        />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#06092B" />
         <meta
