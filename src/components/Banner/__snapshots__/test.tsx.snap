@@ -101,7 +101,7 @@ exports[`<Banner /> should render all informations 1`] = `
     padding: 4.0rem;
     position: absolute;
     bottom: 0;
-    left: 0;
+    right: 0;
   }
 }
 

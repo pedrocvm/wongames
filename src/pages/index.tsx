@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import Main from 'components/Main';
+
 const Home: React.FC = () => {
   return (
     <div>
@@ -25,10 +25,6 @@ const Home: React.FC = () => {
           content="A simple project starter to work with TypeScript, React, NextJS and Styled Components"
         />
       </Head>
-
-      <main>
-        <Main />
-      </main>
     </div>
   );
 };

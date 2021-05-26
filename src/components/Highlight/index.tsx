@@ -1,28 +1,36 @@
 import * as S from './styles';
-import Heading from 'components/Heading';
+import Button from 'components/Button';
 
-export type AlignmentTypes = 'left' | 'right';
+export type AlignmentTypes = 'normal' | 'reverse';
 
 export type HighlightProps = {
-  backgroundImg: string;
-  floatImg: string;
-  align?: AlignmentTypes;
+  title: string;
+  subtitle: string;
+  buttonLabel: string;
+  buttonLink: string;
+  backgroundImage: string;
+  floatImage?: string;
+  alignment?: AlignmentTypes;
 };
 
 const Highlight = ({
-  backgroundImg,
-  floatImg,
-  align = 'left'
+  title,
+  subtitle,
+  buttonLabel,
+  buttonLink,
+  backgroundImage,
+  floatImage,
+  alignment = 'normal'
 }: HighlightProps) => (
-  <S.Wrapper>
-    <Heading lineLeft lineColor="secondary">
-      Most Popular
-    </Heading>
-
-    <S.Banner align={align}>
-      <S.Background src={backgroundImg} />
-      <S.Float src={floatImg} />
-    </S.Banner>
+  <S.Wrapper backgroundImage={backgroundImage} alignment={alignment}>
+    {!!floatImage && <S.FloatImage src={floatImage} alt={title} />}
+    <S.Content aria-label={`Background ${title}`}>
+      <S.Title>{title}</S.Title>
+      <S.Subtitle dangerouslySetInnerHTML={{ __html: subtitle }} />
+      <Button as="a" href={buttonLink} size="medium">
+        {buttonLabel}
+      </Button>
+    </S.Content>
   </S.Wrapper>
 );
 
