@@ -6,10 +6,26 @@ import theme from 'styles/theme';
 
 addDecorator(withNextRouter());
 
+export const parameters = {
+  backgrounds: {
+    default: 'Won Light',
+    values: [
+      {
+        name: 'Won Light',
+        value: theme.colors.white
+      },
+      {
+        name: 'Won Dark',
+        value: theme.colors.mainBg
+      }
+    ]
+  }
+};
+
 export const decorators = [
   (Story) => (
     <ThemeProvider theme={theme}>
-      <GlobalStyles />
+      <GlobalStyles removeBg />
       <Story />
     </ThemeProvider>
   )

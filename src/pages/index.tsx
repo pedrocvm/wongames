@@ -1,32 +1,32 @@
 import React from 'react';
-import Head from 'next/head';
+import Home, { HomeTemplateProps } from 'templates/Home';
 
-const Home: React.FC = () => {
-  return (
-    <div>
-      <Head>
-        <title>Starter Next</title>
-        <link rel="shortcut icon" href="/img/icon-512.png" />
-        <link rel="apple-touch-icon" href="/img/icon-512.png" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
-          rel="stylesheet"
-        />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
-          rel="stylesheet"
-        />
-        <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#06092B" />
-        <meta
-          name="description"
-          content="A simple project starter to work with TypeScript, React, NextJS and Styled Components"
-        />
-      </Head>
-    </div>
-  );
-};
+import BannersMock from 'components/BannerSlider/mock';
+import GamesMock from 'components/GameCardSlider/mock';
+import HighlightMock from 'components/Highlight/mock';
 
-export default Home;
+export default function Index(props: HomeTemplateProps) {
+  return <Home {...props} />;
+}
+
+// getStaticProps => Gera um Estático em Build Time.
+// getServerSideProps => Gera via SSR a cada Request.
+// getInitialProps => Gera via SSR a cada Request (Não utilizado).
+export function getServerSideProps() {
+  return {
+    props: {
+      banners: BannersMock,
+      newGames: GamesMock,
+      mostPopularHighlight: HighlightMock,
+      mostPopularGames: GamesMock,
+      upcomingGames: GamesMock,
+      upcomingHighlight: HighlightMock,
+      upcomingMoreGames: GamesMock,
+      freeGames: GamesMock,
+      freeHighlight: HighlightMock
+    }
+  };
+}
+
+// ATENÇÃO
+// Os Métodos getStaticProps/getServerSideProps SÓ FUNCIONAM EM PAGES

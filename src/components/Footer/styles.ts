@@ -4,6 +4,10 @@ import media from 'styled-media-query';
 import * as HeadingStyles from 'components/Heading/styles';
 
 export const Wrapper = styled.footer`
+  ${({ theme }) => css`
+    padding: ${theme.spacings.small} ${theme.spacings.xxsmall};
+  `}
+
   ${HeadingStyles.Wrapper} {
     text-transform: uppercase;
   }

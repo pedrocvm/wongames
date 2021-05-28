@@ -9,15 +9,15 @@ describe('<Heading />', () => {
     renderWithTheme(<Heading>Won Games</Heading>);
 
     expect(screen.getByRole('heading', { name: /won games/i })).toHaveStyle({
-      color: '#030517'
+      color: '#FAFAFA'
     });
   });
 
   it('should render a black heading when color is passed', () => {
-    renderWithTheme(<Heading color="white">Won Games</Heading>);
+    renderWithTheme(<Heading color="black">Won Games</Heading>);
 
     expect(screen.getByRole('heading', { name: /won games/i })).toHaveStyle({
-      color: '#FAFAFA'
+      color: '#030517'
     });
   });
 

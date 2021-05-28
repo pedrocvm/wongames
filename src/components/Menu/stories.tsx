@@ -15,7 +15,7 @@ Basic.parameters = {
     defaultViewport: 'mobile1'
   },
   backgrounds: {
-    default: 'dark'
+    default: 'Won Dark'
   },
   layout: 'fullscreen'
 };

@@ -13,7 +13,7 @@ export default {
   },
   parameters: {
     backgrounds: {
-      default: 'dark'
+      default: 'Won Dark'
     }
   },
   argTypes: {
