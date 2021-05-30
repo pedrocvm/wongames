@@ -29,7 +29,7 @@ const wrapperModifiers = {
 };
 
 export const Wrapper = styled.section<WrapperProps>`
-  ${({ theme, backgroundImage, alignment }) => css`
+  ${({ backgroundImage, alignment }) => css`
     position: relative;
     background-image: url(${backgroundImage});
     background-position: center center;
