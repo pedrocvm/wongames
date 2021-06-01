@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Slider from '.';
 
 export default {
-  title: 'Slider',
+  title: 'Slider/Slider',
   component: Slider,
   args: {},
   argTypes: {}

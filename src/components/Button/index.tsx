@@ -10,6 +10,7 @@ export type ButtonProps = {
   fullWidth?: boolean;
   icon?: React.ReactNode | JSX.Element; // Qualquer um serve
   as?: React.ElementType; // Polimorfismo entre Elementos HTML
+  minimal?: boolean;
 } & ButtonTypes; // É assim que extende Types
 
 const Button = ({
@@ -17,9 +18,16 @@ const Button = ({
   icon,
   size = 'medium',
   fullWidth = false,
+  minimal = false,
   ...props
 }: ButtonProps) => (
-  <S.Wrapper size={size} fullWidth={fullWidth} hasIcon={!!icon} {...props}>
+  <S.Wrapper
+    size={size}
+    fullWidth={fullWidth}
+    hasIcon={!!icon}
+    minimal={minimal}
+    {...props}
+  >
     {!!icon && icon}
     {!!children && <span>{children}</span>}
   </S.Wrapper>

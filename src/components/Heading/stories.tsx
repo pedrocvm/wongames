@@ -2,7 +2,7 @@ import { Meta, Story } from '@storybook/react/types-6-0';
 import Heading, { HeadingProps } from '.';
 
 export default {
-  title: 'Heading',
+  title: 'UI/Heading',
   component: Heading,
   args: {},
   argTypes: {

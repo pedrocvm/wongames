@@ -60,6 +60,8 @@ exports[`<Banner /> should render all informations 1`] = `
   padding: 0.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   height: 5rem;
   font-size: 1.6rem;
   padding: 0.8rem 4.8rem;

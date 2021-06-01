@@ -23,6 +23,8 @@ exports[`<Button /> should render the medium size by default 1`] = `
   padding: 0.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   height: 4rem;
   font-size: 1.4rem;
   padding: 0.8rem 3.2rem;
