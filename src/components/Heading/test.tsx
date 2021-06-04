@@ -41,6 +41,14 @@ describe('<Heading />', () => {
     );
   });
 
+  it('should render with a medium size by default', () => {
+    renderWithTheme(<Heading>Won Games</Heading>);
+
+    expect(screen.getByRole('heading', { name: /won games/i })).toHaveStyle({
+      'font-size': '2.8rem'
+    });
+  });
+
   it('should render with a small size', () => {
     renderWithTheme(
       <Heading lineLeft size="small">
@@ -59,6 +67,18 @@ describe('<Heading />', () => {
         modifier: '::after'
       }
     );
+  });
+
+  it('should render with a huge size', () => {
+    renderWithTheme(
+      <Heading lineLeft size="huge">
+        Won Games
+      </Heading>
+    );
+
+    expect(screen.getByRole('heading', { name: /won games/i })).toHaveStyle({
+      'font-size': '4.8rem'
+    });
   });
 
   it('should render a heading with a secondary line color', () => {

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Menu2 as MenuIcon } from '@styled-icons/remix-line/Menu2';
 import { ShoppingCart as ShoppingCartIcon } from '@styled-icons/material-outlined/ShoppingCart';
 import { SearchOutline as SearchIcon } from '@styled-icons/evaicons-outline/SearchOutline';
@@ -45,14 +46,20 @@ const Menu = ({ username }: MenuProps) => {
           <ShoppingCartIcon aria-label="Open Shopping Cart" />
         </S.IconWrapper>
         <MediaMatch greaterThan="medium">
-          {!username && <Button>Sign In</Button>}
+          {!username && (
+            <Link href="/sign-in" passHref>
+              <Button as="a">Sign In</Button>
+            </Link>
+          )}
         </MediaMatch>
       </S.MenuGroup>
 
       <S.MenuFull aria-hidden={!isOpen} isOpen={isOpen}>
         <CloseIcon aria-label="Close Menu" onClick={() => setIsOpen(false)} />
         <S.MenuNav>
-          <S.MenuLink href="#">Home</S.MenuLink>
+          <Link href="/" passHref>
+            <S.MenuLink>Home</S.MenuLink>
+          </Link>
           <S.MenuLink href="#">Explore</S.MenuLink>
 
           {!!username && (
@@ -65,13 +72,15 @@ const Menu = ({ username }: MenuProps) => {
 
         {!username && (
           <S.RegisterBox>
-            <Button fullWidth size="large">
-              Log in now
-            </Button>
+            <Link href="/sign-in" passHref>
+              <Button fullWidth size="large">
+                Sign in
+              </Button>
+            </Link>
             <span>or</span>
-            <S.CreateAccount href="#" title="Sign Up">
-              Sign Up
-            </S.CreateAccount>
+            <Link href="/sign-up" passHref>
+              <S.CreateAccount title="Sign Up">Sign Up</S.CreateAccount>
+            </Link>
           </S.RegisterBox>
         )}
       </S.MenuFull>

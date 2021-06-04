@@ -37,7 +37,7 @@ describe('<Menu />', () => {
   it('should show register box when logged out', () => {
     renderWithTheme(<Menu />);
 
-    expect(screen.getByText(/log in now/i)).toBeInTheDocument();
+    expect(screen.getAllByText(/sign in/i)).toHaveLength(2);
     expect(screen.getByText(/sign up/i)).toBeInTheDocument();
     expect(screen.queryByText(/wishlist/i)).not.toBeInTheDocument();
     expect(screen.queryByText(/my account/i)).not.toBeInTheDocument();

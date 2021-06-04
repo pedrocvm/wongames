@@ -1,0 +1,285 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FormSignUp /> should render the form 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #EAEAEA;
+  border-radius: 0.2rem;
+  padding: 0 1.6rem;
+  border: 0.2rem solid;
+  border-color: #EAEAEA;
+}
+
+.c2:focus-within {
+  box-shadow: 0 0 0.5rem #F231A5;
+}
+
+.c5 {
+  color: #030517;
+  font-family: Poppins,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  font-size: 1.6rem;
+  padding: 0.8rem 0;
+  padding-left: 1.6rem;
+  background: transparent;
+  border: 0;
+  outline: none;
+  width: 100%;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #8F8F8F;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+}
+
+.c3 > svg {
+  width: 2.2rem;
+  height: 100%;
+}
+
+.c7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: Poppins,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  background: linear-gradient(180deg,#ff5f5f 0%,#f062c0 50%);
+  color: #FAFAFA;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  padding: 0.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  height: 5rem;
+  font-size: 1.6rem;
+  padding: 0.8rem 4.8rem;
+  width: 100%;
+}
+
+.c7:hover {
+  background: linear-gradient(180deg,#e35565 0%,#d058a6);
+}
+
+.c0 .c1 {
+  margin: 0.8rem 0;
+}
+
+.c0 .c6 {
+  margin: 3.2rem auto 1.6rem;
+}
+
+.c8 {
+  font-size: 1.4rem;
+  color: #030517;
+  text-align: center;
+}
+
+.c8 a {
+  color: #3CD3C1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-bottom: 0.1rem solid #3CD3C1;
+  -webkit-transition: color,border,0.1s ease-in-out;
+  transition: color,border,0.1s ease-in-out;
+}
+
+.c8 a:hover {
+  color: #29b3a3;
+  border-bottom: 0.1rem solid #29b3a3;
+}
+
+.c4 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+<div
+  class="c0"
+>
+  <form>
+    <div
+      class="c1 "
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c3"
+        >
+          <svg
+            aria-hidden="true"
+            class="c4"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 8c-1.178 0-2 .822-2 2s.822 2 2 2 2-.822 2-2-.822-2-2-2z"
+              fill="none"
+            />
+            <path
+              d="M12 4c-4.337 0-8 3.663-8 8 0 2.176.923 4.182 2.39 5.641A5.007 5.007 0 0111 14.573h2a5.007 5.007 0 014.61 3.068C19.077 16.182 20 14.176 20 12c0-4.337-3.663-8-8-8zm0 10c-2.28 0-4-1.72-4-4s1.72-4 4-4 4 1.72 4 4-1.72 4-4 4z"
+              fill="none"
+            />
+            <path
+              d="M13 16.572h-2a3.003 3.003 0 00-2.926 2.354C9.242 19.604 10.584 20 12 20s2.758-.396 3.926-1.073A3.003 3.003 0 0013 16.572z"
+              fill="none"
+            />
+            <path
+              d="M12 2C6.579 2 2 6.579 2 12c0 3.189 1.592 6.078 4 7.924V20h.102C7.77 21.245 9.813 22 12 22s4.23-.755 5.898-2H18v-.076c2.408-1.846 4-4.734 4-7.924 0-5.421-4.579-10-10-10zM8.074 18.927A3.002 3.002 0 0111 16.573h2a3.003 3.003 0 012.926 2.354C14.758 19.604 13.416 20 12 20s-2.758-.396-3.926-1.073zm9.536-1.286A5.007 5.007 0 0013 14.573h-2a5.007 5.007 0 00-4.61 3.068C4.923 16.182 4 14.176 4 12c0-4.337 3.663-8 8-8s8 3.663 8 8c0 2.176-.923 4.182-2.39 5.641z"
+            />
+            <path
+              d="M12 6c-2.28 0-4 1.72-4 4s1.72 4 4 4 4-1.72 4-4-1.72-4-4-4zm0 6c-1.178 0-2-.822-2-2s.822-2 2-2 2 .822 2 2-.822 2-2 2z"
+            />
+          </svg>
+        </div>
+        <input
+          class="c5"
+          placeholder="Name"
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      class="c1 "
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c3"
+        >
+          <svg
+            aria-hidden="true"
+            class="c4"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0V0z"
+              fill="none"
+            />
+            <path
+              d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"
+            />
+          </svg>
+        </div>
+        <input
+          class="c5"
+          name="email"
+          placeholder="Email"
+          type="email"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      class="c1 "
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c3"
+        >
+          <svg
+            aria-hidden="true"
+            class="c4"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 2C9.243 2 7 4.243 7 7v2H6c-1.103 0-2 .897-2 2v9c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-9c0-1.103-.897-2-2-2h-1V7c0-2.757-2.243-5-5-5zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v2H9V7zm9.002 13H13v-2.278c.595-.347 1-.985 1-1.722 0-1.103-.897-2-2-2s-2 .897-2 2c0 .736.405 1.375 1 1.722V20H6v-9h12l.002 9z"
+            />
+          </svg>
+        </div>
+        <input
+          class="c5"
+          name="password"
+          placeholder="Password"
+          type="password"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      class="c1 "
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c3"
+        >
+          <svg
+            aria-hidden="true"
+            class="c4"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 2C9.243 2 7 4.243 7 7v2H6c-1.103 0-2 .897-2 2v9c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-9c0-1.103-.897-2-2-2h-1V7c0-2.757-2.243-5-5-5zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v2H9V7zm9.002 13H13v-2.278c.595-.347 1-.985 1-1.722 0-1.103-.897-2-2-2s-2 .897-2 2c0 .736.405 1.375 1 1.722V20H6v-9h12l.002 9z"
+            />
+          </svg>
+        </div>
+        <input
+          class="c5"
+          placeholder="Confirm Password"
+          type="password"
+          value=""
+        />
+      </div>
+    </div>
+    <button
+      class="c6 c7"
+    >
+      <span>
+        Sign up now
+      </span>
+    </button>
+    <div
+      class="c8"
+    >
+      Already have an account?
+       
+      <a
+        href="/sign-in"
+      >
+        Sign in
+      </a>
+    </div>
+  </form>
+</div>
+`;

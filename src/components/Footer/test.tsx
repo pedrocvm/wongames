@@ -5,7 +5,7 @@ import Footer from '.';
 
 describe('<Footer />', () => {
   it('should render 4 columns topics and logo', () => {
-    const { container } = renderWithTheme(<Footer />);
+    renderWithTheme(<Footer />);
 
     expect(screen.getByRole('img', { name: /won games/i })).toBeInTheDocument();
 
@@ -22,7 +22,5 @@ describe('<Footer />', () => {
     expect(
       screen.getByRole('heading', { name: /location/i })
     ).toBeInTheDocument();
-
-    expect(container.firstChild).toMatchSnapshot();
   });
 });
