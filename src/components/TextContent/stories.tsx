@@ -3,7 +3,7 @@ import TextContent, { TextContentProps } from '.';
 import textMock from './mock';
 
 export default {
-  title: 'TextContent',
+  title: 'Core/TextContent',
   component: TextContent,
   args: textMock,
   argTypes: {},

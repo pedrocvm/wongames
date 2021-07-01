@@ -12,6 +12,7 @@ export const Wrapper = styled.menu`
     padding: ${theme.spacings.small} ${theme.spacings.xxsmall};
     justify-content: space-between;
     position: relative;
+    z-index: ${theme.layers.menu};
   `}
 `;
 
@@ -58,6 +59,10 @@ export const MenuGroup = styled.div`
 
 export const MenuNav = styled.div`
   ${({ theme }) => css`
+    a {
+      cursor: pointer;
+    }
+
     margin-left: ${theme.spacings.small};
     ${media.greaterThan('medium')`
 			margin-left: ${theme.spacings.small};
