@@ -86,4 +86,16 @@ describe('<Button />', () => {
       }
     );
   });
+
+  it('should render a disabed button', () => {
+    renderWithTheme(<Button disabled>Buy now</Button>);
+
+    expect(screen.getByRole('button', { name: /buy now/i })).toHaveStyleRule(
+      'cursor',
+      'not-allowed',
+      {
+        modifier: ':disabled'
+      }
+    );
+  });
 });

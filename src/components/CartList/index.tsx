@@ -1,4 +1,5 @@
 import GameItem, { GameItemProps } from 'components/GameItem';
+import Heading from 'components/Heading';
 import * as S from './styles';
 
 export type CartListProps = {
@@ -8,9 +9,14 @@ export type CartListProps = {
 
 const CartList = ({ items, total }: CartListProps) => (
   <S.Wrapper>
-    {items.map((item) => (
-      <GameItem key={item.title} {...item} />
-    ))}
+    <Heading color="black" lineBottom size="small">
+      Items
+    </Heading>
+    <S.Content>
+      {items.map((item) => (
+        <GameItem key={item.title} {...item} />
+      ))}
+    </S.Content>
 
     <S.Footer>
       Total: <S.Total>{total}</S.Total>
