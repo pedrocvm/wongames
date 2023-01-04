@@ -31,7 +31,7 @@ export const IconWrapper = styled.div`
     height: 2.4rem;
     cursor: pointer;
 
-    &:hover {
+    svg:hover {
       animation: pulse 0.3s ease-in-out infinite;
       animation-direction: alternate;
       @keyframes pulse {
