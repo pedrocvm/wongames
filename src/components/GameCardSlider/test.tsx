@@ -7,38 +7,43 @@ import GameCardSlider from '.';
 const items = [
   {
     title: 'Population Zero',
+    slug: 'population-zero',
     developer: 'Rockstar Games',
     img: 'https://source.unsplash.com/user/willianjusten/300x140',
-    price: 'R$ 235,00',
-    promotionalPrice: 'R$ 215,00'
+    price: 235,
+    promotionalPrice: 215
   },
   {
     title: 'Population Zero',
+    slug: 'population-zero',
     developer: 'Rockstar Games',
     img: 'https://source.unsplash.com/user/willianjusten/300x141',
-    price: 'R$ 235,00',
-    promotionalPrice: 'R$ 215,00'
+    price: 235,
+    promotionalPrice: 215
   },
   {
     title: 'Population Zero',
+    slug: 'population-zero',
     developer: 'Rockstar Games',
     img: 'https://source.unsplash.com/user/willianjusten/300x142',
-    price: 'R$ 235,00',
-    promotionalPrice: 'R$ 215,00'
+    price: 235,
+    promotionalPrice: 215
   },
   {
     title: 'Population Zero',
+    slug: 'population-zero',
     developer: 'Rockstar Games',
     img: 'https://source.unsplash.com/user/willianjusten/300x143',
-    price: 'R$ 235,00',
-    promotionalPrice: 'R$ 215,00'
+    price: 235,
+    promotionalPrice: 215
   },
   {
     title: 'Population Zero',
+    slug: 'population-zero',
     developer: 'Rockstar Games',
     img: 'https://source.unsplash.com/user/willianjusten/300x144',
-    price: 'R$ 235,00',
-    promotionalPrice: 'R$ 215,00'
+    price: 235,
+    promotionalPrice: 215
   }
 ];
 

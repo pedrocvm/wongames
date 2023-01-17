@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import {
   Favorite,
   FavoriteBorder,
@@ -7,13 +8,15 @@ import * as S from './styles';
 import Button from 'components/Button';
 import Ribbon from 'components/Ribbon';
 import { RibbonColors, RibbonSizes } from 'components/Ribbon';
+import formatPrice from 'utils/formatPrice';
 
 export type GameCardProps = {
   title: string;
+  slug: string;
   developer: string;
   img: string;
-  price: string;
-  promotionalPrice?: string;
+  price: number;
+  promotionalPrice?: number;
   favorite?: boolean;
   onFav?: () => void;
   hasRibbon?: boolean;
@@ -24,6 +27,7 @@ export type GameCardProps = {
 
 const GameCard = ({
   title,
+  slug,
   developer,
   img,
   price,
@@ -41,15 +45,19 @@ const GameCard = ({
         {ribbonText}
       </Ribbon>
     )}
-    <S.ImageBox>
-      <img src={img} alt={title} />
-    </S.ImageBox>
+    <Link href={`game/${slug}`} passHref>
+      <S.ImageBox>
+        <img src={img} alt={title} />
+      </S.ImageBox>
+    </Link>
 
     <S.Content>
-      <S.Info>
-        <S.Title>{title}</S.Title>
-        <S.Developer>{developer}</S.Developer>
-      </S.Info>
+      <Link href={`game/${slug}`} passHref>
+        <S.Info>
+          <S.Title>{title}</S.Title>
+          <S.Developer>{developer}</S.Developer>
+        </S.Info>
+      </Link>
 
       <S.FavButton role="button" onClick={onFav}>
         {favorite ? (
@@ -60,8 +68,10 @@ const GameCard = ({
       </S.FavButton>
 
       <S.BuyBox>
-        {!!promotionalPrice && <S.Price isPromotional>{price}</S.Price>}
-        <S.Price>{promotionalPrice || price}</S.Price>
+        {!!promotionalPrice && (
+          <S.Price isPromotional>{formatPrice(price)}</S.Price>
+        )}
+        <S.Price>{formatPrice(promotionalPrice || price)}</S.Price>
         <Button icon={<AddShoppingCart />} size="small"></Button>
       </S.BuyBox>
     </S.Content>

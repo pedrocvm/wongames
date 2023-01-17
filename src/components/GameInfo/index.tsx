@@ -5,13 +5,14 @@ import {
   FavoriteBorder,
   AddShoppingCart
 } from '@styled-icons/material-outlined';
+import formatPrice from 'utils/formatPrice';
 
 import * as S from './styles';
 
 export type GameInfoProps = {
   title: string;
   description: string;
-  price: string;
+  price: number;
 };
 
 const GameInfo = ({ title, description, price }: GameInfoProps) => (
@@ -20,7 +21,7 @@ const GameInfo = ({ title, description, price }: GameInfoProps) => (
       {title}
     </Heading>
 
-    <Ribbon color="secondary">{`$${price}`}</Ribbon>
+    <Ribbon color="secondary">{formatPrice(price)}</Ribbon>
 
     <S.Description>{description}</S.Description>
 
