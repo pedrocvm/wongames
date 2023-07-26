@@ -5,7 +5,7 @@ import { HighlightProps } from '.';
 type WrapperProps = Pick<HighlightProps, 'backgroundImage' | 'alignment'>;
 
 const wrapperModifiers = {
-  normal: () => css`
+  right: () => css`
     grid-template-areas: 'floatImage content';
     grid-template-columns: 1.3fr 2fr;
 
@@ -14,7 +14,7 @@ const wrapperModifiers = {
     }
   `,
 
-  reverse: () => css`
+  left: () => css`
     grid-template-areas: 'content floatImage';
     grid-template-columns: 2fr 1.3fr;
 

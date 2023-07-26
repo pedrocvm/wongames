@@ -64,7 +64,7 @@ describe('<Highlight />', () => {
 
   it('should render align reverse', () => {
     const { container } = renderWithTheme(
-      <Highlight {...props} alignment="reverse" />
+      <Highlight {...props} alignment="left" />
     );
 
     expect(container.firstChild).toHaveStyleRule(

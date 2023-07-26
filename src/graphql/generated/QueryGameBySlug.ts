@@ -54,7 +54,6 @@ export interface QueryGameBySlug_games {
   publisher: QueryGameBySlug_games_publisher | null;
   categories: QueryGameBySlug_games_categories[];
   platforms: QueryGameBySlug_games_platforms[];
-  slug: string;
 }
 
 export interface QueryGameBySlug {

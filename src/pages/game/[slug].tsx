@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import Game, { GameTemplateProps } from 'templates/Game';
 import { initializeApollo } from 'utils/apollo';
-import { QUERY_GAMES, QUERY_GAMES_BY_SLUG } from 'graphql/queries/games';
+import { QUERY_GAMES, QUERY_GAME_BY_SLUG } from 'graphql/queries/games';
 import {
   QueryGameBySlug,
   QueryGameBySlugVariables
@@ -41,7 +41,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     QueryGameBySlug,
     QueryGameBySlugVariables
   >({
-    query: QUERY_GAMES_BY_SLUG,
+    query: QUERY_GAME_BY_SLUG,
     variables: {
       slug: `${params?.slug}`
     }

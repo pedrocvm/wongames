@@ -18,6 +18,8 @@ export async function getStaticProps() {
     }
   });
 
+  console.log(data.games.filter((game) => !game.cover));
+
   return {
     props: {
       revalidate: 60,
@@ -25,7 +27,9 @@ export async function getStaticProps() {
         title: game.name,
         slug: game.slug,
         developer: game.developers[0].name,
-        img: game.cover!.url,
+        img: game.cover
+          ? game.cover.url
+          : 'https://bitsofco.de/content/images/2018/12/broken-1.png',
         price: game.price
       })),
       filterItems: filtersMock

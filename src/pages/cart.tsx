@@ -1,4 +1,4 @@
-import Cart, { CartProps } from 'templates/Base/Cart';
+import Cart, { CartProps } from 'templates/Cart';
 
 import gamesMock from 'components/GameCardSlider/mock';
 import highlightMock from 'components/Highlight/mock';
